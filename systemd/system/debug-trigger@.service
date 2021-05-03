@@ -1,0 +1,6 @@
+[Unit]
+Description=BMC Debug Trigger
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/debug-trigger /%I /proc/sysrq-trigger

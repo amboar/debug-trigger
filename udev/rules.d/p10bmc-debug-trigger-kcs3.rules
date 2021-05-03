@@ -1,0 +1,2 @@
+ACTION=="add", DEVPATH=="*/1e78902c.kcs/*", SUBSYSTEM=="serio", RUN{program}+="/bin/sh -c 'echo -n serio_raw > /sys%p/drvctl'"
+ACTION=="add", DEVPATH=="*/1e78902c.kcs/*", SUBSYSTEMS=="serio", SUBSYSTEM=="misc", TAG+="systemd", ENV{SYSTEMD_WANTS}+="debug-trigger@"

@@ -1,0 +1,5 @@
+option('systemd', type: 'boolean', value: true)
+option('p10bmc-debug-trigger-kcs1', type: 'boolean', value: false)
+option('p10bmc-debug-trigger-kcs2', type: 'boolean', value: false)
+option('p10bmc-debug-trigger-kcs3', type: 'boolean', value: false)
+option('p10bmc-debug-trigger-kcs4', type: 'boolean', value: false)
